@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "plato-platform"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Redrup"]
+readme = "README.md"
+packages = [{include = "plato_platform", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
