@@ -8,8 +8,15 @@ packages = [{include = "plato_platform"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+openai = "^0.28.1"
+argparse = "^1.4.0"
+python-dotenv = "^1.0.0"
+pyautogen = "^0.1.14"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "plato_platform.main:main"
