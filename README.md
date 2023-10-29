@@ -41,3 +41,26 @@ For the scope of this project, we're limiting the implementation to pure text an
 - Personal and professional goals
 - Interests 
 - Previous learning
+
+## Installation and usage
+
+### Installation
+Clone the repository and then move into the directory:
+```bash
+git clone git@github.com:Matthew-Redrup/plato-platform.git
+cd plato-platform
+```
+Then install using poetry:
+```bash
+poetry install
+```
+
+### Usage
+You will need to create a .env file in the root directory of the project. This file should contain the following variables:
+```bash
+OPENAI_API_KEY=""
+```
+Then to start the program run the following command with a prompt detailing the topic you wish to learn about:
+```bash
+poetry run start --prompt "Teach me about the history of the world"
+```
