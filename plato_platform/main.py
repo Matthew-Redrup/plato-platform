@@ -1,6 +1,6 @@
 import os
 import dotenv
-import argparse
+from plato_platform.utils.cli import cli
 
 dotenv.load_dotenv()
 
@@ -9,15 +9,8 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--prompt", help="Prompt to pass the agent")
-    args = parser.parse_args()
-
-    if not args.prompt:
-        print("Prompt not provided. Exiting...")
-        return
-
-    print("Hello, World!", args.prompt)
+    output = cli()
+    return output
 
 
 if __name__ == "__main__":
