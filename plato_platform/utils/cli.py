@@ -14,3 +14,4 @@ def cli(args=None):
         return
 
     print("Prompt:", args.prompt)
+    return args.prompt
