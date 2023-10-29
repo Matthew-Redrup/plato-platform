@@ -42,6 +42,9 @@ For the scope of this project, we're limiting the implementation to pure text an
 - Interests 
 - Previous learning
 
+### Diagram of Initial Proposed Architecture
+![plato_project_diagram1](https://github.com/Matthew-Redrup/plato-platform/assets/16837301/96bee611-9044-4043-95c9-10eb0b22d117)
+
 ## Installation and usage
 
 ### Installation
