@@ -10,8 +10,8 @@ def is_termination_msg(content):
     return False
 
 
-USER_PROXY_PROMPT = ""
-HOST_PROMPT = ""
+USER_PROXY_PROMPT = "A human admin. Interact with the learner to discuss the topics they want to learn about. Ask questions to the learner to brainstorm potential sub topics"
+HOST_PROMPT = "You are an expert on the learner. You are here to help the learner learn about the topics they want to learn about. Consider the learners level, profession and objectives and plan some content based on the topics provided by the User Proxy."
 
 # create a UserProxyAgent instance named "user_proxy"
 user_proxy = autogen.UserProxyAgent(
